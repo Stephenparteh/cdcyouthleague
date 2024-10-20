@@ -111,6 +111,12 @@
             margin: 0 10px;
         }
 
+        .mini-section {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -126,8 +132,10 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"
+        style="height: 60px; position: fixed; width: 100%; z-index: 100;">
         <div class="container">
+
             <a class="navbar-brand" href="#">National Youth League - CDC
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -180,6 +188,124 @@
         </div>
     </section>
 
+    <!-- Retreat Section -->
+    <section class="retreat-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Upcoming Retreat</h2>
+            <p class="lead">
+                Join us for our upcoming retreat where we will focus on leadership development, community building,
+                and personal growth. Don't miss this opportunity to connect with fellow youth and strengthen your
+                skills!
+            </p>
+            <img src="images/retreat.jpeg" class="img-fluid mb-4" alt="Retreat Image">
+            <div>
+                <a href="retreat.html" class="btn btn-outline-primary">Learn More About the Retreat</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Laws Section -->
+    <section class="laws-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Laws of the Revolutionary National Youth League</h2>
+            <p class="lead text-center mb-4">
+                The following laws govern the activities and conduct of the Revolutionary National Youth League,
+                ensuring fairness, accountability, and transparency.
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Law 1: Youth Participation</h5>
+                            <p class="card-text">All youth members are encouraged to participate actively in the
+                                league's activities and decision-making processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Law 2: Code of Conduct</h5>
+                            <p class="card-text">Members are expected to uphold the values of integrity, respect, and
+                                responsibility in all league-related activities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Law 3: Leadership Accountability</h5>
+                            <p class="card-text">Leaders are accountable to the members and must report on their
+                                activities regularly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Law 4: Conflict Resolution</h5>
+                            <p class="card-text">The league encourages peaceful resolution of conflicts through dialogue
+                                and mediation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more laws as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Mini Section -->
+    <section class="photo-gallery-mini py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Photo Gallery</h2>
+            <div id="photoGalleryCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/audience01.jpeg" class="d-block w-100 mini-section" alt="Event 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/DOWeah01.jpeg" class="d-block w-100 mini-section" alt="Event 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/masscdcian01.jpeg" class="d-block w-100 mini-section" alt="Event 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/Weah01.jpeg" class="d-block w-100 mini-section" alt="Event 4">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/retreat.jpeg" class="d-block w-100 mini-section" alt="Event 5">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/MohammedMBambaJr01.jpeg" class="d-block w-100 mini-section"
+                                    alt="Event 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#photoGalleryCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#photoGalleryCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="text-center mt-3">
+                <a href="full-gallery.html" class="btn btn-outline-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Newsletter Section -->
     <section class="newsletter-section bg-light py-5">
         <div class="container text-center">
@@ -201,12 +327,12 @@
             <ul class="list-unstyled">
                 <li><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></li>
             </ul>
-            <div class="technologies-used">
+            <!-- <div class="technologies-used">
                 <p>Technologies used:</p>
                 <img src="https://via.placeholder.com/50" alt="HTML5">
                 <img src="https://via.placeholder.com/50" alt="CSS3">
                 <img src="https://via.placeholder.com/50" alt="Bootstrap">
-            </div>
+            </div> -->
         </div>
     </footer>
 
