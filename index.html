@@ -60,18 +60,40 @@
             border: 1px solid #F4F4F4;
         }
 
+        /* background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)), url('/images/masscdcian01.jpeg'); */
 
         /* Hero Section Styling */
-        .hero {
-            /* background-color: var(--primary-color); */
+        /* .hero {
             color: #fff;
             padding: 100px 0;
             text-align: center;
             opacity: 0.8;
-            /* background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)), url('/images/masscdcian01.jpeg'); */
             background: url('/images/masscdcian01.jpeg') no-repeat center center/cover;
             background-size: cover;
             background-position: center;
+        } */
+
+        .hero {
+            background: url('images/masscdcian01.jpeg') no-repeat center center/cover;
+            padding: 150px 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
 
         .hero h1 {
