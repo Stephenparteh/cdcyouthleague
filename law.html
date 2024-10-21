@@ -4,22 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDC Youth League - Leadership</title>
+    <title>CDC Youth League - Law</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
             --primary-color: #004aad;
-            /* Blue */
             --secondary-color: #d32f2f;
-            /* Red */
             --accent-color: #ffffff;
-            /* White */
             --text-color: #333;
         }
 
         /* Header Section */
-        .header-section {
+        /* .header-section {
             background: linear-gradient(var(--primary-color), var(--secondary-color));
             color: var(--accent-color);
             height: 60vh;
@@ -27,6 +24,31 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+        } */
+
+        .hero {
+            /* background-color: var(--primary-color); */
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)), url('/images/masscdcian01.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            /* Ensures absolute positioning works within */
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Text shadow for visibility */
+        }
+
+        .hero h5 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .header-section h1 {
@@ -34,46 +56,22 @@
             font-weight: bold;
         }
 
-        /* Leadership Section */
-        .leadership-section {
+        /* Laws Section */
+        .laws-section {
             padding: 60px 0;
             background-color: var(--accent-color);
         }
 
-        .leadership-section h2 {
+        .laws-section h2 {
             text-align: center;
             color: var(--primary-color);
             font-size: 2.5rem;
             margin-bottom: 40px;
         }
 
-        .profile-card {
-            border: 2px solid var(--primary-color);
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .profile-card:hover {
-            transform: scale(1.05);
-        }
-
-        .profile-card img {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 300px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .profile-card h3 {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
-            margin-top: 15px;
-        }
-
-        .profile-card p {
-            font-size: 1rem;
-            color: var(--text-color);
+        .laws-accordion .card-header {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
         }
 
         /* Footer */
@@ -97,11 +95,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style=" position: fixed; width: 100%; z-index: 100;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-
-            <a class="navbar-brand" href="#">National Youth League - CDC
-            </a>
+            <a class="navbar-brand" href="#">National Youth League - CDC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -110,67 +106,108 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Who we are</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Retreat</a></li>
-                    <li class="nav-item"><a class="nav-link" href="law.html">Laws</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="retreat.html">Retreat</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="law.html">Laws</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="header-section">
+    <section class="bg-light py-5 hero">
         <div class="container">
-            <h1>Our Leadership</h1>
-            <p>The dynamic leaders of CDC Youth League</p>
+            <h2 class="text-center mb-4 display-4 font-weight-bold">CDC Youth League Retreat: National Youth
+                Leadership Retreat</h2>
+            <h5 class="text-center mb-4">Thursday, October 29 – Sunday, November 3, 2024 | Buchanan City, Grand
+                Bassa, Liberia</h5>
         </div>
-    </header>
+    </section>
 
-    <!-- Leadership Section -->
-    <section class="leadership-section">
+    <!-- Laws Section -->
+    <section class="laws-section">
         <div class="container">
-            <h2>Meet the Leaders</h2>
-            <div class="row">
-                <!-- Leader 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="profile-card">
-                        <img src="https://via.placeholder.com/300" alt="Leader 1">
-                        <div class="p-3">
-                            <h3>John Doe</h3>
-                            <p>President of CDC Youth League</p>
-                            <p>John has led numerous youth initiatives, focusing on community engagement and political
-                                mobilization. His passion for youth empowerment drives the league's vision for a
-                                progressive Liberia.</p>
+            <h2>Our Constitution & Laws</h2>
+
+            <!-- Search Bar -->
+            <!-- <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control"
+                                placeholder="Search for specific laws or articles...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i>
+                                    Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+
+            <!-- Accordion for Laws -->
+            <div class="accordion laws-accordion" id="lawAccordion">
+                <!-- Law 1 -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Article I: Preamble
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                        data-parent="#lawAccordion">
+                        <div class="card-body">
+                            The Revolutionary National Youth League was established with the goal of fostering unity,
+                            promoting national development, and empowering the youth in Liberia. This document outlines
+                            the principles, values, and laws governing the League.
                         </div>
                     </div>
                 </div>
-                <!-- Leader 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="profile-card">
-                        <img src="https://via.placeholder.com/300" alt="Leader 2">
-                        <div class="p-3">
-                            <h3>Jane Smith</h3>
-                            <p>Vice President</p>
-                            <p>Jane oversees the strategic planning and operations of the youth league. Her leadership
-                                ensures that the league's programs align with its mission of fostering leadership among
-                                the youth.</p>
+
+                <!-- Law 2 -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Article II: Membership
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#lawAccordion">
+                        <div class="card-body">
+                            Membership in the National Youth League is open to all young Liberians who align with the
+                            mission and values of the Congress for Democratic Change. This article defines the roles,
+                            rights, and responsibilities of members.
                         </div>
                     </div>
                 </div>
-                <!-- Leader 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="profile-card">
-                        <img src="https://via.placeholder.com/300" alt="Leader 3">
-                        <div class="p-3">
-                            <h3>Michael Johnson</h3>
-                            <p>Communications Director</p>
-                            <p>Michael is responsible for outreach and ensuring the league's message reaches Liberian
-                                youth through various media channels. His background in communications strengthens the
-                                league's engagement efforts.</p>
+
+                <!-- Law 3 -->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Article III: Leadership
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#lawAccordion">
+                        <div class="card-body">
+                            The leadership structure of the National Youth League consists of elected officials and
+                            committee leaders who serve specific terms. This article elaborates on leadership roles,
+                            elections, and terms.
                         </div>
                     </div>
                 </div>
+
+                <!-- Add more laws/articles as necessary -->
+
             </div>
         </div>
     </section>
@@ -185,6 +222,8 @@
         </div>
     </footer>
 
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
