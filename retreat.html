@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
     <title>CDC Youth League Retreat</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Bootstrap Icons CDN -->
@@ -23,8 +26,9 @@
             /* Red */
             --text-color: #333;
         }
-/* Colors */
-.bg-deep-blue {
+
+        /* Colors */
+        .bg-deep-blue {
             background-color: #002F87;
         }
 
@@ -64,6 +68,50 @@
         .card {
             background-color: #FFFFFF;
             border: 1px solid #F4F4F4;
+        }
+
+
+        /* Apply the Roboto font to the entire website */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Font weights for headings and buttons */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            /* Bold headings */
+        }
+
+        p,
+        a,
+        li {
+            font-weight: 400;
+            /* Normal text */
+        }
+
+        .btn {
+            font-weight: 500;
+            /* Slightly bold for buttons */
+        }
+
+        /* Customize font size for a more professional look */
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            /* For better readability */
         }
 
         /* background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)), url('/images/masscdcian01.jpeg'); */
@@ -200,19 +248,19 @@
             </div>
         </div>
     </nav>
-
-    <!-- Retreat Section -->
-    <section id="retreat" class="py-5">
-        <section class="bg-light py-5 hero">
+    <div class="bg-light-gray">
+        <!-- Retreat Section -->
+        <section id="retreat" class="py-5">
+            <section class="bg-light py-5 hero">
+                <div class="container">
+                    <h2 class="text-center mb-4 display-4 font-weight-bold">CDC Youth League Retreat: National Youth
+                        Leadership Retreat</h2>
+                    <h5 class="text-center mb-4">Thursday, October 29 – Sunday, November 3, 2024 | Buchanan City, Grand
+                        Bassa, Liberia</h5>
+                </div>
+            </section>
             <div class="container">
-                <h2 class="text-center mb-4 display-4 font-weight-bold">CDC Youth League Retreat: National Youth
-                    Leadership Retreat</h2>
-                <h5 class="text-center mb-4">Thursday, October 29 – Sunday, November 3, 2024 | Buchanan City, Grand
-                    Bassa, Liberia</h5>
-            </div>
-        </section>
-        <div class="container">
-            <!-- <section class="py-5 bg-light">
+                <!-- <section class="py-5 bg-light">
                 <div class="container">
                     <h4 class="text-center font-weight-bold mb-4">Introduction</h4>
                     <div class="border p-4 rounded shadow-sm bg-white">
@@ -221,31 +269,35 @@
                 </div>
             </section> -->
 
-            <!-- "Who We Are" Section with Image -->
-            <section class="main-content mt-5">
-                <div class="">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h2>About the National Youth League Retreat</h2>
-                            <p>The CDC National Youth League Retreat is not just a meeting—it is a pivotal turning
-                                point, an event that seeks to galvanize the movement toward a shared goal of resurgence.
-                                It will attract a host of national and international guests who can offer insights and
-                                inspire us to align our ambitions with practical strategies. Their perspectives will
-                                enrich the discussions, challenge us to think innovatively, and help crystallize our
-                                objectives. Together, we will reignite the flame of progress, refine our strategies, and
-                                chart a course for reclaiming national leadership in 2029. United in purpose and
-                                grounded in values, we will emerge from this retreat stronger, more resilient, and ready
-                                to shape Liberia’s future.
-                            </p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="images/retreat.jpeg" style="width: 100%; height: 360px; "
-                                class="img-fluid rounded" alt="Youth in action">
+                <!-- "Who We Are" Section with Image -->
+                <section class="main-content mt-5">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>About the National Youth League Retreat</h2>
+                                <p>The CDC National Youth League Retreat is not just a meeting—it is a pivotal turning
+                                    point, an event that seeks to galvanize the movement toward a shared goal of
+                                    resurgence.
+                                    It will attract a host of national and international guests who can offer insights
+                                    and
+                                    inspire us to align our ambitions with practical strategies. Their perspectives will
+                                    enrich the discussions, challenge us to think innovatively, and help crystallize our
+                                    objectives. Together, we will reignite the flame of progress, refine our strategies,
+                                    and
+                                    chart a course for reclaiming national leadership in 2029. United in purpose and
+                                    grounded in values, we will emerge from this retreat stronger, more resilient, and
+                                    ready
+                                    to shape Liberia’s future.
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/retreat.jpeg" style="width: 100%; height: 360px; "
+                                    class="img-fluid rounded" alt="Youth in action">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- <div class="about-highlights">]
+                </section>
+                <!-- <div class="about-highlights">]
                 <div class="highlight-box">
                     <h3>Why Attend?</h3>
                     <ul>
@@ -256,81 +308,86 @@
                 </div>
             </div> -->
 
-            <section id="purpose-objectives" class="py-5 bg-light">
-                <div class="container">
-                    <div class="row justify-content-center text-center mb-4">
-                        <div class="col-md-8">
-                            <h2 class="display-5 fw-bold text-primary">Purpose and Objectives</h2>
-                            <p class="lead text-muted">Our retreat is designed to unify and empower youth leaders for a
-                                brighter future. Here's what we aim to achieve:</p>
+                <section id="purpose-objectives" class="py-5 bg-light">
+                    <div class="container">
+                        <div class="row justify-content-center text-center mb-4">
+                            <div class="col-md-8">
+                                <h2 class="display-5 fw-bold" style="color: #DA291C;">Purpose and Objectives</h2>
+                                <p class="lead text-muted">Our retreat is designed to unify and empower youth leaders
+                                    for a
+                                    brighter future. Here's what we aim to achieve:</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-10 mx-auto">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-handshake me-3 fa-2x"></i>
+                                            <div>
+                                                <h4 class="fw-bold">Fostering Reconciliation</h4>
+                                                <p class="mb-0">The primary goal is to cultivate a renewed sense of
+                                                    unity
+                                                    and solidarity within the National Youth League.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item bg-transparent">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-chart-line me-3 fa-2x"></i>
+                                            <div>
+                                                <h4 class="fw-bold">Evaluating the 2023 Electoral Outcome</h4>
+                                                <p class="mb-0">Understanding the factors that contributed to the
+                                                    electoral
+                                                    defeat is essential for charting a new course.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item bg-transparent">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-road me-3 fa-2x"></i>
+                                            <div>
+                                                <h4 class="fw-bold">Developing a Strategic Path Forward</h4>
+                                                <p class="mb-0">With the 2029 elections in sight, the RNYL must define a
+                                                    clear and actionable roadmap.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item bg-transparent">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-bullseye me-3 fa-2x"></i>
+                                            <div>
+                                                <h4 class="fw-bold">Recommitting to the CDC’s Vision and Values</h4>
+                                                <p class="mb-0">The retreat will also serve as an opportunity to
+                                                    reaffirm
+                                                    our commitment to the CDC’s core values.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item bg-transparent">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-sitemap me-3 fa-2x"></i>
+                                            <div>
+                                                <h4 class="fw-bold">Strengthening Organizational Structures</h4>
+                                                <p class="mb-0">The RNYL must operate with optimal organizational
+                                                    capacity
+                                                    to effectively lead the party’s resurgence.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-10 mx-auto">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-handshake me-3 fa-2x"></i>
-                                        <div>
-                                            <h4 class="fw-bold">Fostering Reconciliation</h4>
-                                            <p class="mb-0">The primary goal is to cultivate a renewed sense of unity
-                                                and solidarity within the National Youth League.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="list-group-item bg-transparent">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-chart-line me-3 fa-2x"></i>
-                                        <div>
-                                            <h4 class="fw-bold">Evaluating the 2023 Electoral Outcome</h4>
-                                            <p class="mb-0">Understanding the factors that contributed to the electoral
-                                                defeat is essential for charting a new course.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="list-group-item bg-transparent">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-road me-3 fa-2x"></i>
-                                        <div>
-                                            <h4 class="fw-bold">Developing a Strategic Path Forward</h4>
-                                            <p class="mb-0">With the 2029 elections in sight, the RNYL must define a
-                                                clear and actionable roadmap.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="list-group-item bg-transparent">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-bullseye me-3 fa-2x"></i>
-                                        <div>
-                                            <h4 class="fw-bold">Recommitting to the CDC’s Vision and Values</h4>
-                                            <p class="mb-0">The retreat will also serve as an opportunity to reaffirm
-                                                our commitment to the CDC’s core values.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="list-group-item bg-transparent">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fas fa-sitemap me-3 fa-2x"></i>
-                                        <div>
-                                            <h4 class="fw-bold">Strengthening Organizational Structures</h4>
-                                            <p class="mb-0">The RNYL must operate with optimal organizational capacity
-                                                to effectively lead the party’s resurgence.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
 
 
-            <!-- <h4>Thematic Scope</h4>
+                <!-- <h4>Thematic Scope</h4>
             <ol>
                 <li><strong>Understanding the 2023 Electoral Loss and Extracting Lessons</strong></li>
                 <li><strong>Reconciliation and Reinforcing Internal Unity</strong></li>
@@ -338,84 +395,87 @@
                 <li><strong>Reaffirming the CDC’s Vision and Values</strong></li>
             </ol> -->
 
-            <section id="expected-outcomes" class="py-5 bg-light">
-                <div class="container">
-                    <div class="row justify-content-center text-center mb-5">
-                        <div class="col-md-8">
-                            <h2 class="display-5 fw-bold text-primary">Expected Outcomes</h2>
-                            <p class="lead text-muted">These outcomes reflect our goals for a stronger, united, and
-                                strategically driven organization.</p>
+                <section id="expected-outcomes" class="py-5 bg-light">
+                    <div class="container">
+                        <div class="row justify-content-center text-center mb-5">
+                            <div class="col-md-8">
+                                <h2 class="display-5 fw-bold" style="color: #DA291C;">Expected Outcomes</h2>
+                                <p class="lead text-muted">These outcomes reflect our goals for a stronger, united, and
+                                    strategically driven organization.</p>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <!-- Outcome 1 -->
+                            <div class="col-md-6 col-lg-4 mt-2">
+                                <div class="card h-100 shadow border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-people-arrows fa-3x mb-3"></i>
+                                        <h5 class="card-title fw-bold">Renewed Reconciliation and Unity</h5>
+                                        <p class="card-text">A stronger sense of solidarity and collaboration within the
+                                            party.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Outcome 2 -->
+                            <div class="col-md-6 col-lg-4 mt-2">
+                                <div class="card h-100 shadow border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-map-signs fa-3x mb-3"></i>
+                                        <h5 class="card-title fw-bold">Strategic Agenda for 2029</h5>
+                                        <p class="card-text">A clear and actionable roadmap guiding our preparations for
+                                            the
+                                            2029 elections.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Outcome 3 -->
+                            <div class="col-md-6 col-lg-4 mt-2">
+                                <div class="card h-100 shadow border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-user-tie fa-3x mb-3"></i>
+                                        <h5 class="card-title fw-bold">Strengthened Leadership Commitment</h5>
+                                        <p class="card-text">A renewed dedication among leaders to drive forward the
+                                            CDC’s
+                                            mission.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Outcome 4 -->
+                            <div class="col-md-6 col-lg-4 mt-2">
+                                <div class="card h-100 shadow border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-tools fa-3x mb-3"></i>
+                                        <h5 class="card-title fw-bold">Enhanced Organizational Capacity</h5>
+                                        <p class="card-text">A more efficient, effective, and capable organizational
+                                            structure.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Outcome 5 -->
+                            <div class="col-md-6 col-lg-4 mt-2">
+                                <div class="card h-100 shadow border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-handshake fa-3x mb-3"></i>
+                                        <h5 class="card-title fw-bold">Building Inclusive Political Alliances</h5>
+                                        <p class="card-text">Expanding partnerships for greater political inclusivity
+                                            and
+                                            support.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row g-4">
-                        <!-- Outcome 1 -->
-                        <div class="col-md-6 col-lg-4 mt-2">
-                            <div class="card h-100 shadow border-0">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-people-arrows fa-3x mb-3"></i>
-                                    <h5 class="card-title fw-bold">Renewed Reconciliation and Unity</h5>
-                                    <p class="card-text">A stronger sense of solidarity and collaboration within the
-                                        party.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Outcome 2 -->
-                        <div class="col-md-6 col-lg-4 mt-2">
-                            <div class="card h-100 shadow border-0">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-map-signs fa-3x mb-3"></i>
-                                    <h5 class="card-title fw-bold">Strategic Agenda for 2029</h5>
-                                    <p class="card-text">A clear and actionable roadmap guiding our preparations for the
-                                        2029 elections.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Outcome 3 -->
-                        <div class="col-md-6 col-lg-4 mt-2">
-                            <div class="card h-100 shadow border-0">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-user-tie fa-3x mb-3"></i>
-                                    <h5 class="card-title fw-bold">Strengthened Leadership Commitment</h5>
-                                    <p class="card-text">A renewed dedication among leaders to drive forward the CDC’s
-                                        mission.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Outcome 4 -->
-                        <div class="col-md-6 col-lg-4 mt-2">
-                            <div class="card h-100 shadow border-0">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-tools fa-3x mb-3"></i>
-                                    <h5 class="card-title fw-bold">Enhanced Organizational Capacity</h5>
-                                    <p class="card-text">A more efficient, effective, and capable organizational
-                                        structure.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Outcome 5 -->
-                        <div class="col-md-6 col-lg-4 mt-2">
-                            <div class="card h-100 shadow border-0">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-handshake fa-3x mb-3"></i>
-                                    <h5 class="card-title fw-bold">Building Inclusive Political Alliances</h5>
-                                    <p class="card-text">Expanding partnerships for greater political inclusivity and
-                                        support.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
 
 
-        </div>
-    </section>
-
+            </div>
+        </section>
+    </div>
     <!-- Footer -->
     <footer class="text-center bg-deep-blue">
         <div class="container">

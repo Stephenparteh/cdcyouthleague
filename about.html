@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CDC Youth League</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CDN -->
@@ -61,6 +63,50 @@
             opacity: 0.8;
         }
 
+        /* Apply the Roboto font to the entire website */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Font weights for headings and buttons */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            /* Bold headings */
+        }
+
+        p,
+        a,
+        li {
+            font-weight: 400;
+            /* Normal text */
+        }
+
+        .btn {
+            font-weight: 500;
+            /* Slightly bold for buttons */
+        }
+
+        /* Customize font size for a more professional look */
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            /* For better readability */
+        }
+
+
         .hero {
             background: url('images/masscdcian01.jpeg') no-repeat center center/cover;
             padding: 150px 0;
@@ -92,6 +138,19 @@
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Text shadow for visibility */
+        }
+
+        .hero h5 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         /* Page Header Styling */
@@ -224,116 +283,126 @@
             </div>
         </div>
     </nav>
+    <div class="bg-light-gray">
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title mb-4 display-4 font-weight-bold">About the CDC Youth League</h2>
+                <h5 class="text-center mb-4">Building a brighter future for Liberia's youth through leadership, service,
+                    and unity under the
+                    banner of
+                    patriotism.</h5>
+            </div>
+        </section>
 
-    <!-- Page Header -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">About the CDC Youth League</h1>
-            <p>Building a brighter future for Liberia's youth through leadership, service, and unity under the banner of
-                patriotism.</p>
-        </div>
-    </section>
-
-    <!-- "Who We Are" Section with Image -->
-    <section class="main-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Who We Are</h2>
-                    <p>
-                        The CDC Youth League is a dynamic and dedicated youth organization under the Congress for
-                        Democratic Change (CDC). We strive to promote patriotism, service, and leadership among
-                        Liberia's youth. Our mission is to inspire and cultivate the next generation of leaders who will
-                        champion national progress and uphold the values of integrity and unity.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/masscdcian02.jpeg" style="width: 100%; height: 300px; object-fit: cover;"
-                        class="img-fluid rounded" alt="Youth in action">
+        <!-- "Who We Are" Section with Image -->
+        <section class="main-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Who We Are</h2>
+                        <p>
+                            The CDC Youth League is a dynamic and dedicated youth organization under the Congress for
+                            Democratic Change (CDC). We strive to promote patriotism, service, and leadership among
+                            Liberia's youth. Our mission is to inspire and cultivate the next generation of leaders who
+                            will
+                            champion national progress and uphold the values of integrity and unity.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/masscdcian02.jpeg" style="width: 100%; height: 300px; object-fit: cover;"
+                            class="img-fluid rounded" alt="Youth in action">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- "What We Stand For" Section with Image -->
-    <section class="main-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="images/masscdcian02.jpeg" style="width: 100%; height: 300px; object-fit: cover;"
-                        class="img-fluid rounded" alt="Community outreach project">
-                </div>
-                <div class="col-lg-6">
-                    <h2>What We Stand For</h2>
-                    <p>
-                        At the CDC Youth League, we are committed to social justice, equality, and the empowerment of
-                        every young Liberian. Through leadership training, community initiatives, and political
-                        engagement, we are equipping our youth to lead with purpose and vision. We believe that through
-                        our efforts, we can build a brighter, more inclusive future for Liberia.
-                    </p>
-                    <p>
-                        <i class="fas fa-handshake" style="color: var(--primary-color);"></i>
-                        Unity - We believe in the power of unity among Liberians.
-                    </p>
-                    <p>
-                        <i class="fas fa-balance-scale" style="color: var(--primary-color);"></i>
-                        Social Justice - Equal rights and opportunities for all.
-                    </p>
-                    <p>
-                        <i class="fas fa-people-arrows" style="color: var(--primary-color);"></i>
-                        Leadership - Empowering youth to lead.
-                    </p>
+        <!-- "What We Stand For" Section with Image -->
+        <section class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/masscdcian02.jpeg" style="width: 100%; height: 300px; object-fit: cover;"
+                            class="img-fluid rounded" alt="Community outreach project">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>What We Stand For</h2>
+                        <p>
+                            At the CDC Youth League, we are committed to social justice, equality, and the empowerment
+                            of
+                            every young Liberian. Through leadership training, community initiatives, and political
+                            engagement, we are equipping our youth to lead with purpose and vision. We believe that
+                            through
+                            our efforts, we can build a brighter, more inclusive future for Liberia.
+                        </p>
+                        <p>
+                            <i class="fas fa-handshake" style="color: var(--primary-color);"></i>
+                            Unity - We believe in the power of unity among Liberians.
+                        </p>
+                        <p>
+                            <i class="fas fa-balance-scale" style="color: var(--primary-color);"></i>
+                            Social Justice - Equal rights and opportunities for all.
+                        </p>
+                        <p>
+                            <i class="fas fa-people-arrows" style="color: var(--primary-color);"></i>
+                            Leadership - Empowering youth to lead.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CDC Youth League History with Icons -->
-    <section class="container" data-aos="fade-up" data-aos-delay="200">
-        <h2 class="section-title">CDC Youth League History</h2>
-        <ul class="timeline">
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <h4><i class="fas fa-users"></i> Establishment of the CDC Youth League</h4>
-                    <p>The Youth League of the Congress for Democratic Change (CDC) was founded in 2005, aimed at
-                        mobilizing and empowering young Liberians to actively participate in politics and governance.
-                    </p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <h4><i class="fas fa-vote-yea"></i> Youth Leadership in 2005 Elections</h4>
-                    <p>During the 2005 elections, the CDC Youth League played a pivotal role in grassroots mobilization,
-                        rallying youth support for George Weah’s presidential campaign.</p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <h4><i class="fas fa-graduation-cap"></i> Empowerment Programs and Initiatives (2010-2015)</h4>
-                    <p>Between 2010 and 2015, the Youth League launched initiatives focused on youth empowerment, skills
-                        development, and community service, such as leadership training and educational programs.</p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <h4><i class="fas fa-trophy"></i> Contribution to 2017 Electoral Victory</h4>
-                    <p>The Youth League played a critical role in the 2017 presidential election, organizing rallies and
-                        outreach programs to secure a historic win for George Weah and the CDC.</p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-item-content">
-                    <h4><i class="fas fa-globe"></i> Ongoing Youth Initiatives and Community Engagement</h4>
-                    <p>The CDC Youth League continues to engage the community, focusing on addressing youth
-                        unemployment, supporting education, and promoting civic participation among Liberia's young
-                        population.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
+        <!-- CDC Youth League History with Icons -->
+        <section class="container" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="section-title">CDC Youth League History</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4><i class="fas fa-users"></i> Establishment of the CDC Youth League</h4>
+                        <p>The Youth League of the Congress for Democratic Change (CDC) was founded in 2005, aimed at
+                            mobilizing and empowering young Liberians to actively participate in politics and
+                            governance.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4><i class="fas fa-vote-yea"></i> Youth Leadership in 2005 Elections</h4>
+                        <p>During the 2005 elections, the CDC Youth League played a pivotal role in grassroots
+                            mobilization,
+                            rallying youth support for George Weah’s presidential campaign.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4><i class="fas fa-graduation-cap"></i> Empowerment Programs and Initiatives (2010-2015)</h4>
+                        <p>Between 2010 and 2015, the Youth League launched initiatives focused on youth empowerment,
+                            skills
+                            development, and community service, such as leadership training and educational programs.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4><i class="fas fa-trophy"></i> Contribution to 2017 Electoral Victory</h4>
+                        <p>The Youth League played a critical role in the 2017 presidential election, organizing rallies
+                            and
+                            outreach programs to secure a historic win for George Weah and the CDC.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4><i class="fas fa-globe"></i> Ongoing Youth Initiatives and Community Engagement</h4>
+                        <p>The CDC Youth League continues to engage the community, focusing on addressing youth
+                            unemployment, supporting education, and promoting civic participation among Liberia's young
+                            population.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Image Slider for Community Projects -->
-    <!-- <section class="community-slider my-5">
+        <!-- Image Slider for Community Projects -->
+        <!-- <section class="community-slider my-5">
         <div id="communityCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#communityCarousel" data-slide-to="0" class="active"></li>
@@ -374,21 +443,23 @@
         </div>
     </section> -->
 
-    <!-- Vision Section -->
-    <section class="vision-section text-center">
-        <div class="container">
-            <h2>Our Vision for the Future</h2>
-            <p>
-                We envision a Liberia where every young person is empowered to contribute to national growth and
-                prosperity. Our programs aim to nurture youth leadership that is deeply rooted in the values of unity,
-                courage, and relentless progress. By fostering a culture of civic responsibility and innovation, we hope
-                to inspire a generation that is ready to tackle the challenges of tomorrow.
-            </p>
-        </div>
-    </section>
+        <!-- Vision Section -->
+        <section class="vision-section text-center">
+            <div class="container">
+                <h2>Our Vision for the Future</h2>
+                <p>
+                    We envision a Liberia where every young person is empowered to contribute to national growth and
+                    prosperity. Our programs aim to nurture youth leadership that is deeply rooted in the values of
+                    unity,
+                    courage, and relentless progress. By fostering a culture of civic responsibility and innovation, we
+                    hope
+                    to inspire a generation that is ready to tackle the challenges of tomorrow.
+                </p>
+            </div>
+        </section>
 
-    <!-- Branding Section -->
-    <!-- <section class="branding-section">
+        <!-- Branding Section -->
+        <!-- <section class="branding-section">
         <div class="container">
             <h2>Empowering Liberia's Next Generation of Leaders</h2>
             <p>Through our training programs, community outreach, and political activism, the CDC Youth League is
@@ -396,73 +467,76 @@
         </div>
     </section> -->
 
-    <!-- Leadership Team Section -->
-    <section class="leadership-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Meet Our Leadership</h2>
-            <div class="row text-center">
-                <!-- Leader Card 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-sm leader-card">
-                        <img src="images/MohammedMBambaJr01.jpeg" class="card-img-top"
-                            style="height: 250px; object-fit: cover;" alt="Mohammed Bamba Jr">
-                        <div class="card-body">
-                            <h5 class="card-title">Mohammed Bamba Jr</h5>
-                            <p class="card-text text-muted">President</p>
-                            <p class="card-text">Mohammed Bamba Jr. is the visionary leader of the Youth League,
-                                focusing on
-                                empowering young people to take leadership roles within their communities and advocating
-                                for
-                                positive societal change.</p>
+        <!-- Leadership Team Section -->
+        <section class="leadership-section py-5 bg-light-gray">
+            <div class="container">
+                <h2 class="text-center mb-5">Meet Our Leadership</h2>
+                <div class="row text-center">
+                    <!-- Leader Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm leader-card">
+                            <img src="images/MohammedMBambaJr01.jpeg" class="card-img-top"
+                                style="height: 250px; object-fit: cover;" alt="Mohammed Bamba Jr">
+                            <div class="card-body">
+                                <h5 class="card-title">Mohammed Bamba Jr</h5>
+                                <p class="card-text text-muted">President</p>
+                                <p class="card-text">Mohammed Bamba Jr. is the visionary leader of the Youth League,
+                                    focusing on
+                                    empowering young people to take leadership roles within their communities and
+                                    advocating.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Leader Card 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-sm leader-card">
-                        <img src="images/MohammedMBambaJr01.jpeg" class="card-img-top"
-                            style="height: 250px; object-fit: cover;" alt="Mohammed Bamba Jr">
-                        <div class="card-body">
-                            <h5 class="card-title">Mohammed Bamba Jr</h5>
-                            <p class="card-text text-muted">Vice President</p>
-                            <p class="card-text">As Vice President, Mohammed Bamba Jr. works closely with the leadership
-                                team
-                                to drive strategic initiatives and ensure the effective execution of key programs across
-                                the nation.</p>
+                    <!-- Leader Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm leader-card">
+                            <img src="images/MohammedMBambaJr01.jpeg" class="card-img-top"
+                                style="height: 250px; object-fit: cover;" alt="Mohammed Bamba Jr">
+                            <div class="card-body">
+                                <h5 class="card-title">Mohammed Bamba Jr</h5>
+                                <p class="card-text text-muted">Vice President</p>
+                                <p class="card-text">As Vice President, Mohammed Bamba Jr. works closely with the
+                                    leadership
+                                    team
+                                    to drive strategic initiatives and ensure the effective execution of key programs
+                                    across
+                                    the nation.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Leader Card 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-sm leader-card">
-                        <img src="images/MohammedMBambaJr01.jpeg" class="card-img-top"
-                            style="height: 250px; object-fit: cover;" alt="David Johnson">
-                        <div class="card-body">
-                            <h5 class="card-title">David Johnson</h5>
-                            <p class="card-text text-muted">Secretary General</p>
-                            <p class="card-text">David Johnson serves as Secretary General, ensuring that all
-                                communications
-                                and organizational tasks are effectively managed, keeping the league on track to achieve
-                                its goals.</p>
+                    <!-- Leader Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-sm leader-card">
+                            <img src="images/MohammedMBambaJr01.jpeg" class="card-img-top"
+                                style="height: 250px; object-fit: cover;" alt="David Johnson">
+                            <div class="card-body">
+                                <h5 class="card-title">David Johnson</h5>
+                                <p class="card-text text-muted">Secretary General</p>
+                                <p class="card-text">David Johnson serves as Secretary General, ensuring that all
+                                    communications
+                                    and organizational tasks are effectively managed, keeping the league on track to
+                                    achieve
+                                    its goals.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Join Our Retreat Section -->
-    <section class="retreat-section py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-4">Join Our Retreat</h2>
-            <p class="lead mb-4">Looking to deepen your connection with like-minded youth and grow spiritually? Join us
-                for an enriching and inspiring retreat filled with community, learning, and reflection.</p>
-            <a href="retreat-page.html" class="btn btn-primary btn-lg">Learn More</a>
-        </div>
-    </section>
-
+        <!-- Join Our Retreat Section -->
+        <section class="retreat-section py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">Join Our Retreat</h2>
+                <p class="lead mb-4">Looking to deepen your connection with like-minded youth and grow spiritually? Join
+                    us
+                    for an enriching and inspiring retreat filled with community, learning, and reflection.</p>
+                <a href="retreat.html" class="btn btn-bright-red text-white btn-lg">Learn More</a>
+            </div>
+        </section>
+    </div>
     <!-- Footer -->
     <footer class="text-center bg-deep-blue">
         <div class="container">

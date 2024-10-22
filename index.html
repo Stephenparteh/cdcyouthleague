@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDC Youth League - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -60,6 +62,50 @@
             border: 1px solid #F4F4F4;
         }
 
+        /* Apply the Roboto font to the entire website */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Font weights for headings and buttons */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            /* Bold headings */
+        }
+
+        p,
+        a,
+        li {
+            font-weight: 400;
+            /* Normal text */
+        }
+
+        .btn {
+            font-weight: 500;
+            /* Slightly bold for buttons */
+        }
+
+        /* Customize font size for a more professional look */
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            /* For better readability */
+        }
+
+
         /* background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)), url('/images/masscdcian01.jpeg'); */
 
         /* Hero Section Styling */
@@ -74,7 +120,7 @@
         } */
 
         .hero {
-            background-image: url('images/masscdcian01.jpeg') no-repeat center center/cover;
+            background: url('images/masscdcian01.jpeg') no-repeat center center/cover;
             padding: 150px 0;
             /* height: 100vh; */
             display: flex;
@@ -104,6 +150,19 @@
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Text shadow for visibility */
+        }
+
+        .hero h5 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
@@ -227,181 +286,190 @@
             </div>
         </div>
     </nav>
+    <div class="bg-light-gray">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title display-4 font-weight-bold">Welcome to the CDC Youth League</h2>
+                <h5 class="text-center mb-4">Transforming Setbacks into a Great Comeback.</h5>
+                <!-- <a href="about.html" class="btn btn-bright-red text-white p-2">Get Involved</a> -->
+            </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title display-4 font-weight-bold">Welcome to the CDC Youth League</h1>
-            <p>Transforming Setbacks into a Great Comeback.</p>
-            <a href="about.html" class="btn btn-bright-red text-white p-2">Get Involved</a>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="about-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Image Column -->
-                <div class="col-md-6 text-center">
-                    <img src="images/masscdcian04.jpeg" class="img-fluid rounded"
-                        style="object-fit: cover; height: 400px; width: 100%;" alt="About Us Image">
-                </div>
-                <!-- Text Column -->
-                <div class="col-md-6">
-                    <h2>About Us</h2>
-                    <p class="lead">
-                        The CDC Youth League is a dynamic organization dedicated to youth empowerment, leadership
-                        development,
-                        and community service. We aim to foster growth and unity among the youth, ensuring they have the
-                        tools to
-                        lead and drive change in the future.
-                    </p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+        <!-- About Us Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Image Column -->
+                    <div class="col-md-6 text-center">
+                        <img src="images/masscdcian04.jpeg" class="img-fluid rounded"
+                            style="object-fit: cover; height: 300px; width: 100%;" alt="About Us Image">
+                    </div>
+                    <!-- Text Column -->
+                    <div class="col-md-6">
+                        <h2>About Us</h2>
+                        <p class="lead">
+                            The CDC Youth League is a dynamic organization dedicated to youth empowerment, leadership
+                            development,
+                            and community service. We aim to foster growth and unity among the youth, ensuring they have
+                            the
+                            tools to
+                            lead and drive change in the future.
+                        </p>
+                        <a href="about.html" class="btn btn-deep-blue text-white">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Retreat Section -->
-    <section class="retreat-section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="mb-4">Upcoming Retreat</h2>
-                    <p class="lead">
-                        Join us for our upcoming retreat where we will focus on leadership development, community
-                        building,
-                        and personal growth. Don't miss this opportunity to connect with fellow youth and strengthen
-                        your
-                        skills!
-                    </p>
-                    <a href="retreat.html" class="btn btn-outline-primary">Learn More About the Retreat</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/retreat.jpeg" class="img-fluid rounded" style="height: 400px; width: 100%;"
-                        alt="Retreat Image">
+        <!-- Retreat Section -->
+        <section class="retreat-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="mb-4">Upcoming Retreat</h2>
+                        <p class="lead">
+                            Join us for our upcoming retreat where we will focus on leadership development, community
+                            building,
+                            and personal growth. Don't miss this opportunity to connect with fellow youth and strengthen
+                            your
+                            skills!
+                        </p>
+                        <a href="retreat.html" class="btn btn-bright-red text-white mb-3">Learn More About the
+                            Retreat</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/retreat.jpeg" class="img-fluid rounded" style="height: 350px; width: 100%;"
+                            alt="Retreat Image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
-    <!-- Laws Section -->
-    <section class="laws-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Laws of the Revolutionary National Youth League</h2>
-            <p class="lead text-center mb-4">
-                The following laws govern the activities and conduct of the Revolutionary National Youth League,
-                ensuring fairness, accountability, and transparency.
-            </p>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Law 1: Youth Participation</h5>
-                            <p class="card-text">All youth members are encouraged to participate actively in the
-                                league's activities and decision-making processes.</p>
+        <!-- Laws Section -->
+        <section class="laws-section py-5">
+            <div class="container ">
+                <h2 class="text-center mb-4">Laws of the Revolutionary National Youth League</h2>
+                <p class="lead text-center mb-4">
+                    The following laws govern the activities and conduct of the Revolutionary National Youth League,
+                    ensuring fairness, accountability, and transparency.
+                </p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Law 1: Youth Participation</h5>
+                                <p class="card-text">All youth members are encouraged to participate actively in the
+                                    league's activities and decision-making processes.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Law 2: Code of Conduct</h5>
-                            <p class="card-text">Members are expected to uphold the values of integrity, respect, and
-                                responsibility in all league-related activities.</p>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Law 2: Code of Conduct</h5>
+                                <p class="card-text">Members are expected to uphold the values of integrity, respect,
+                                    and
+                                    responsibility in all league-related activities.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Law 3: Leadership Accountability</h5>
-                            <p class="card-text">Leaders are accountable to the members and must report on their
-                                activities regularly.</p>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Law 3: Leadership Accountability</h5>
+                                <p class="card-text">Leaders are accountable to the members and must report on their
+                                    activities regularly.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Law 4: Conflict Resolution</h5>
-                            <p class="card-text">The league encourages peaceful resolution of conflicts through dialogue
-                                and mediation.</p>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Law 4: Conflict Resolution</h5>
+                                <p class="card-text">The league encourages peaceful resolution of conflicts through
+                                    dialogue
+                                    and mediation.</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- Add more laws as needed -->
                 </div>
-                <!-- Add more laws as needed -->
+                <div class="text-center">
+                    <a href="law.html" class="btn btn-deep-blue text-white text-center">View Full Laws</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Photo Gallery Mini Section -->
-    <section class="photo-gallery-mini py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Photo Gallery</h2>
-            <div id="photoGalleryCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/audience01.jpeg" class="d-block w-100 mini-section" alt="Event 1">
+        <!-- Photo Gallery Mini Section -->
+        <section class="photo-gallery-mini py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Photo Gallery</h2>
+                <div id="photoGalleryCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/audience01.jpeg" class="d-block w-100 mini-section" alt="Event 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/DOWeah01.jpeg" class="d-block w-100 mini-section" alt="Event 2">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/masscdcian01.jpeg" class="d-block w-100 mini-section"
+                                        alt="Event 3">
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <img src="images/DOWeah01.jpeg" class="d-block w-100 mini-section" alt="Event 2">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="images/masscdcian01.jpeg" class="d-block w-100 mini-section" alt="Event 3">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/Weah01.jpeg" class="d-block w-100 mini-section" alt="Event 4">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/retreat.jpeg" class="d-block w-100 mini-section" alt="Event 5">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="images/MohammedMBambaJr01.jpeg" class="d-block w-100 mini-section"
+                                        alt="Event 6">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/Weah01.jpeg" class="d-block w-100 mini-section" alt="Event 4">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="images/retreat.jpeg" class="d-block w-100 mini-section" alt="Event 5">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="images/MohammedMBambaJr01.jpeg" class="d-block w-100 mini-section"
-                                    alt="Event 6">
-                            </div>
-                        </div>
+                    <a class="carousel-control-prev" href="#photoGalleryCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#photoGalleryCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="gallery.html" class="btn btn-deep-blue text-white">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Subscribe to Our Newsletter</h2>
+                <p class="lead mb-4">Stay updated with the latest news and exclusive offers. Join our community today!
+                </p>
+                <form class="form-inline justify-content-center">
+                    <div class="form-group mb-2">
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                     </div>
-                </div>
-                <a class="carousel-control-prev" href="#photoGalleryCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#photoGalleryCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <button type="submit" class="btn btn-deep-blue text-white mb-2 ml-2">Subscribe</button>
+                </form>
             </div>
-            <div class="text-center mt-3">
-                <a href="gallery.html" class="btn btn-outline-primary">View Full Gallery</a>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section bg-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Subscribe to Our Newsletter</h2>
-            <p class="lead mb-4">Stay updated with the latest news and exclusive offers. Join our community today!</p>
-            <form class="form-inline justify-content-center">
-                <div class="form-group mb-2">
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2 ml-2">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <!-- Footer -->
     <footer class="text-center bg-deep-blue">
         <div class="container">
