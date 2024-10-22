@@ -14,101 +14,6 @@
             --accent-color: #ffffff;
         }
 
-        /* Colors */
-        .bg-deep-blue {
-            background-color: #002F87;
-        }
-
-        .bg-bright-red {
-            background-color: #DA291C;
-        }
-
-        .bg-light-gray {
-            background-color: #F4F4F4;
-        }
-
-        .bg-dark-blue {
-            background-color: #041E42;
-        }
-
-        .text-white {
-            color: #FFFFFF;
-        }
-
-        .btn-bright-red {
-            background-color: #DA291C;
-            border: none;
-        }
-
-        .btn-deep-blue {
-            background-color: #002F87;
-            border: none;
-        }
-
-        /* Optional Styling for buttons */
-        .btn-bright-red:hover,
-        .btn-deep-blue:hover {
-            opacity: 0.8;
-        }
-
-        /* Example for Cards or Sections */
-        .card {
-            background-color: #FFFFFF;
-            border: 1px solid #F4F4F4;
-        }
-
-        /* background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)), url('/images/masscdcian01.jpeg'); */
-
-        /* Hero Section Styling */
-        /* .hero {
-            color: #fff;
-            padding: 100px 0;
-            text-align: center;
-            opacity: 0.8;
-            background: url('/images/masscdcian01.jpeg') no-repeat center center/cover;
-            background-size: cover;
-            background-position: center;
-        } */
-
-        .hero {
-            background: url('images/masscdcian01.jpeg') no-repeat center center/cover;
-            padding: 150px 0;
-            /* height: 100vh; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.09);
-            z-index: 1;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: bold;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-        }
-
-
         /* Gallery Section */
         .gallery-section {
             padding: 60px 0;
@@ -166,24 +71,22 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-deep-blue"
-        style=" position: fixed; width: 100%; z-index: 100; min-height: 12%;">
+    <nav class="navbar navbar-expand-lg"
+        style=" position: fixed; width: 100%; z-index: 100; background-color: #004aad;">
         <div class="container">
-
-            <a class="navbar-brand" href="index.html">National Youth League - CDC
-            </a>
+            <a class="navbar-brand" href="#">National Youth League - CDC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse text-white" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">Who we are</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="retreat.html">Retreat</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="law.html">Laws</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Who we are</a></li>
+                    <li class="nav-item"><a class="nav-link" href="retreat.html">Retreat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="law.html">Laws</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -222,16 +125,27 @@
                             </div>
                             <p class="description">Description of photo 2</p>
                         </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="gallery-item" data-toggle="modal" data-target="#photoModal2">
+                                <img src="images/masscdcian03.jpeg" alt="Photo 2">
+                            </div>
+                            <p class="description">Description of photo 3</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="gallery-item" data-toggle="modal" data-target="#photoModal2">
+                                <img src="images/masscdcian01.jpeg" alt="Photo 2">
+                            </div>
+                            <p class="description">Description of photo 4</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="gallery-item" data-toggle="modal" data-target="#photoModal2">
+                                <img src="images/masscdcian01.jpeg" alt="Photo 2">
+                            </div>
+                            <p class="description">Description of photo 5</p>
+                        </div>
                     </div>
                 </div>
-                <div class="img-sec">
-                    <!-- <img src="images/masscdcian05.jpeg" class="img-fluid" alt="Photo 1">
-                    <img src="images/masscdcian04.jpeg" class="img-fluid" alt="Photo 1">
-                    <img src="images/masscdcian03.jpeg" class="img-fluid" alt="Photo 1">
-                    <img src="images/masscdcian05.jpeg" class="img-fluid" alt="Photo 1">
-                    <img src="images/masscdcian04.jpeg" class="img-fluid" alt="Photo 1">
-                    <img src="images/masscdcian03.jpeg" class="img-fluid" alt="Photo 1"> -->
-                </div>
+               
                 <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -253,7 +167,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="photoModal1Label">Photo Categor</h5>
+                    <h5 class="modal-title" id="photoModal1Label">Photo Category</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -310,8 +224,7 @@
         </div>
     </div> -->
 
-    <!-- Footer -->
-    <footer class="text-center bg-deep-blue">
+    <footer class="text-center bg-deep-blue p-3">
         <div class="container">
             <p>&copy; 2024 CDC Youth League. All Rights Reserved.</p>
             <ul class="list-unstyled">
@@ -320,13 +233,7 @@
         </div>
     </footer>
 
-
-   
 </body>
-<!-- Bootstrap JS and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
